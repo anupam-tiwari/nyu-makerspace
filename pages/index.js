@@ -175,6 +175,8 @@ export default function Home() {
         max_tokens: 527+200
       }
     };
+
+    console.log(options)
     
 
     axios.request(options).then(function (response) {
