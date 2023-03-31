@@ -282,7 +282,7 @@ export default function Home() {
             </div>
             <div class="w-full bg-slate-100">
             {query && <div className="flex px-8 py-4">Suggested: {suggestions.map((item) => (
-                    <div className="text-[#58048c] px-2" >{item}</div>
+                    <div className="text-[#58048c] px-2" key={Math.floor(Math.random() * 1000000)}>{item}</div>
                   ))}</div>}
               {ai_mode && airesults  && 
               <div class="flex flex-col  justify-end  px-8 py-4 rounded-lg drop-shadow-md bg-white border-2 border-b-[#bfbaba] hover:bg-[#f7f6f6] ">
